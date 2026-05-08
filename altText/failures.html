@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alt Text Failures</title>
+</head>
+<body>
+    <h1>Alt Text - Failure Cases</h1>
+
+    <!-- Case 1: No alt attribute at all -->
+    <img src="koala.jpg">
+
+    <!-- Case 2: alt value is just "image" - useless description -->
+    <img src="koala.jpg" alt="image">
+
+    <!-- Case 3: Empty alt on a descriptive image -->
+    <img src="football.jpg" alt="">
+
+    <!-- Case 4: Filename exposed as alt text -->
+    <img src="football.jpg" alt="football.jpg">
+
+    <!-- Case 5: Redundant "image of" prefix -->
+    <img src="koala.jpg" alt="image of a koala">
+</body>
+</html>
