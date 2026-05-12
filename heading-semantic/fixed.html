@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TechBlog - Fixed</title>
+    </head>
+    <body>
+
+        <!-- Fix 1: header landmark instead of div -->
+        <header>
+            <a href="/home">TechBlog</a>
+
+            <!-- Fix 2: nav landmark with aria-label instead of div -->
+            <nav aria-label="Main navigation">
+                <a href="/home">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Fix 3: main landmark instead of div -->
+        <main>
+
+            <!-- Fix 4: one h1 as the true page title -->
+            <h1>Welcome to TechBlog</h1>
+
+            <!-- Fix 5: h2 used instead of div + strong -->
+            <h2>Latest Articles</h2>
+
+            <!-- Fix 6: h3 used under h2 — correct hierarchy -->
+            <article>
+                <h3>Article One — Getting Started With React</h3>
+                <p>React is a popular JavaScript library...</p>
+
+                <!-- Fix 7: footer inside article for meta info, no fake headings -->
+                <footer>
+                    <p>Author: Jane Doe</p>
+                    <p>Published: May 2026</p>
+                </footer>
+            </article>
+
+            <!-- Fix 8: h3 used consistently — no backwards level jump -->
+            <article>
+                <h3>Article Two — CSS Grid vs Flexbox</h3>
+                <p>Both are powerful layout tools...</p>
+            </article>
+
+            <!-- Fix 9: section with aria-label instead of div -->
+            <section aria-label="Featured this week">
+                <!-- Fix 10: h2 used to establish correct parent context -->
+                <h2>Featured This Week</h2>
+                <p>Check out our most popular posts...</p>
+            </section>
+
+         
+        </main>
+
+        <!-- Fix 11: aside with aria-label instead of div -->
+        <aside aria-label="Sidebar">
+
+            <!-- Fix 12: h2 used to establish heading hierarchy in sidebar -->
+            <h2>Related Posts</h2>
+
+            <!-- Fix 13: ul/li used instead of divs -->
+            <ul>
+                <li>Post 1 — Intro to TypeScript</li>
+                <li>Post 2 — Node.js Best Practices</li>
+                <li>Post 3 — Understanding Closures</li>
+            </ul>
+
+            <!-- Fix 14: section with aria-label to distinguish sidebar regions -->
+            <section aria-label="Newsletter signup">
+                <!-- Fix 15: h2 used consistently, sections are distinguishable -->
+                <h2>Newsletter</h2>
+                <p>Subscribe to get weekly updates</p>
+            </section>
+
+        </aside>
+
+        <!-- Fix 16: footer landmark instead of div -->
+        <footer>
+
+            <!-- Fix 17: nav with aria-label to distinguish from main nav -->
+            <nav aria-label="Footer navigation">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Use</a>
+            </nav>
+
+            <p>Copyright 2026 TechBlog</p>
+
+        </footer>
+
+    </body>
+</html>
